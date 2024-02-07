@@ -11,6 +11,7 @@
 		5D14A0FC2B73189300ED1316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D14A0FB2B73189300ED1316 /* ContentView.swift */; };
 		5D14A0FE2B73189400ED1316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D14A0FD2B73189400ED1316 /* Assets.xcassets */; };
 		5D14A1012B73189400ED1316 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D14A1002B73189400ED1316 /* Preview Assets.xcassets */; };
+		5D14A1082B73224400ED1316 /* FakeCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D14A1072B73224400ED1316 /* FakeCameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5D14A0FB2B73189300ED1316 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D14A0FD2B73189400ED1316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D14A1002B73189400ED1316 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D14A1072B73224400ED1316 /* FakeCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				5D14A0F92B73189300ED1316 /* Helping_SplitOrTabViewApp.swift */,
 				5D14A0FB2B73189300ED1316 /* ContentView.swift */,
+				5D14A1072B73224400ED1316 /* FakeCameraView.swift */,
 				5D14A0FD2B73189400ED1316 /* Assets.xcassets */,
 				5D14A0FF2B73189400ED1316 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D14A1082B73224400ED1316 /* FakeCameraView.swift in Sources */,
 				5D14A0FC2B73189300ED1316 /* ContentView.swift in Sources */,
 				5D14A0FA2B73189300ED1316 /* Helping_SplitOrTabViewApp.swift in Sources */,
 			);
