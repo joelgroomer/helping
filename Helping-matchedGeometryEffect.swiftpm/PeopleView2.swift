@@ -52,7 +52,7 @@ struct PeopleView2: View {
             }
             .overlay {
                 if isDetailPresented, let selectedPerson {
-//                    VStack {
+                    VStack {
                         PersonView(person: selectedPerson, size: 300)
 //                            .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
                             .matchedGeometryEffect(id: selectedPerson.id, in: animationNamespace)
@@ -66,8 +66,8 @@ struct PeopleView2: View {
                                     }
                             }
                         
-//                        Text(selectedPerson.first + " " + selectedPerson.last)
-//                    }
+                        Text(selectedPerson.first + " " + selectedPerson.last)
+                    }
                 }
             }
         }
