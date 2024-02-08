@@ -54,7 +54,7 @@ struct PeopleView2: View {
                 if isDetailPresented, let selectedPerson {
 //                    VStack {
                         PersonView(person: selectedPerson, size: 300)
-                            .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
+//                            .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
                             .matchedGeometryEffect(id: selectedPerson.id, in: animationNamespace)
                             .onTapGesture {
                                 withAnimation(.interactiveSpring(
