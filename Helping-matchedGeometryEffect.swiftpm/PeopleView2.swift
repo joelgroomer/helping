@@ -33,7 +33,7 @@ struct PeopleView2: View {
                             //  if !isDetailPresented {
                             if person != selectedPerson {
                                 PersonView(person: person, size: 100)
-                                    .matchedGeometryEffect(id: person.id, in: animationNamespace)
+                                    .matchedGeometryEffect(id: person.id, in: animationNamespace, anchor: .top)
                                     .onTapGesture {
                                         withAnimation(.interactiveSpring(
                                             response: 0.3,
@@ -43,31 +43,31 @@ struct PeopleView2: View {
                                                 self.isDetailPresented = true
                                             }
                                     }
-                            } 
-//                            else {
-//                            }
+                            }
+                            //                            else {
+                            //                            }
                         }
                     }
                 }
             }
-            .overlay {
-                if isDetailPresented, let selectedPerson {
-                    VStack {
-                        PersonView(person: selectedPerson, size: 300)
-//                            .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
-                            .matchedGeometryEffect(id: selectedPerson.id, in: animationNamespace)
-                            .onTapGesture {
-                                withAnimation(.interactiveSpring(
-                                    response: 0.3,
-                                    dampingFraction: 0.8,
-                                    blendDuration: 0.8)) {
-                                        self.selectedPerson = nil
-                                        self.isDetailPresented = false
-                                    }
-                            }
-                        
-                        Text(selectedPerson.first + " " + selectedPerson.last)
-                    }
+        }
+        .overlay {
+            if isDetailPresented, let selectedPerson {
+                VStack {
+                    PersonView(person: selectedPerson, size: 300)
+                    //                            .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
+                        .matchedGeometryEffect(id: selectedPerson.id, in: animationNamespace, anchor: .top)
+                        .onTapGesture {
+                            withAnimation(.interactiveSpring(
+                                response: 0.3,
+                                dampingFraction: 0.8,
+                                blendDuration: 0.8)) {
+                                    self.selectedPerson = nil
+                                    self.isDetailPresented = false
+                                }
+                        }
+                    
+                    Text(selectedPerson.first + " " + selectedPerson.last)
                 }
             }
         }
